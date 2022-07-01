@@ -1,0 +1,41 @@
+ """ Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set ReplaceWithRegister
+set NERDTree
+set easymotion
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+set hlsearch
+set visualbell
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+map <c-t>   :NERDTree<CR>
+
+nnoremap <Leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <c-x> :action HideAllWindows<CR>
+nnoremap <Leader>p :action JumpToLastWindow<CR>
+""" Distraction Free Mode
+nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+
+""" Run remap
+nnoremap <Leader>r :action ContextRun<CR> 
+nnoremap <c-/> :action FindInPath<CR>
+nnoremap <c-a> :action GotoAction<CR>
+nnoremap <c-f> :action GotoFile<CR>
+nnoremap <leader>u :action FindUsages<CR>
+nnoremap <leader>s :action GotoRelated<CR>
+nnoremap <leader>h :action CallHierarchy<CR>
+nnoremap <leader>b :action ShowNavBar<CR>
+nnoremap <c-s> :action FileStructurePopup<CR>
+nnoremap <c-o> :action GotoSymbol<CR>
