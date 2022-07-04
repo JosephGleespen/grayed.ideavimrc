@@ -32,7 +32,6 @@ nnoremap <leader>k :action CommentByLineComment<CR>
 """ Run remap
 nnoremap <Leader>r :action ContextRun<CR> 
 nnoremap <c-/> :action FindInPath<CR>
-nnoremap <c-a> :action GotoAction<CR>
 nnoremap <c-f> :action GotoFile<CR>
 nnoremap <leader>u :action FindUsages<CR>
 nnoremap <leader>s :action GotoRelated<CR>
@@ -46,3 +45,7 @@ nnoremap <Leader>en :action EditSourceInNewWindow<CR>
 nnoremap <Leader>n :action NextWindow<CR>
 nnoremap <Leader>q :action CloseContent<CR>
 nnoremap <Leader>qa :action CloseAllEditors<CR>
+map <leader>F <Plug>(easymotion-s)
+map <leader>f <Plug>(easymotion-f)
+nnoremap <Leader>=  :action ReformatCode<CR>
+nnoremap <c-\> :action SplitVertically<CR>
